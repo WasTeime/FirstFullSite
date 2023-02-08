@@ -1,0 +1,196 @@
+.home {
+    width: 100%;
+    height: 100%;
+    background: #2d3748;
+}
+
+.user {
+    background: #718096;
+}
+
+/*СЕТКА*/
+.home-content {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 63px;
+}
+
+/*начало размещения блоков в сетке*/
+.user-greeting {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.user-courses-status {
+    grid-column: 1 / 4;
+    margin-bottom: 40px;
+}
+
+.user-courses-list {
+    grid-column: 1 / 4;
+    grid-row: 3 / 6;
+}
+
+nav {
+    grid-column: 4 / 6;
+    grid-row: 1 / 2;
+    display: grid;
+}
+
+.user-statistics {
+    grid-column: 4 / 6;
+    grid-row: 2 / 5;
+    margin: 33px 0px 46px 0px;
+}
+
+.premium-sub {
+    grid-column: 4 / 6;
+    grid-row-start: 5;
+}
+/*конец размещения блоков в сетке*/
+
+/*начало оформления блока приветствия*/
+.user-greeting-wrapper {
+    width: 100%;
+    height: 84%;
+    background: #F5F5F7;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    border-radius: 14px;
+    padding: 0px 20% 0px 10%;
+}
+
+.user-greeting-wrapper-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+}
+
+.user-greeting-wrapper-text__title {
+    font-family: 'Baloo Bhai 2';
+    font-size: 36px;
+    line-height: 37px;
+}
+
+.user-greeting-wrapper-text__greeting {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.user-greeting-wrapper__img {
+    width: auto;
+    height: 100%;
+}
+/*конец оформления блока приветствия*/
+
+/*начало оформления блока с курсами*/
+.user-courses-list__title {
+    font-family: 'Baloo Bhai 2';
+    font-size: 30px;
+    line-height: 38px;
+}
+
+.user-courses-list-sorting {
+    margin: 16px 0px 10px 0px;
+}
+
+.user-courses-list-sorting__buttons {
+    font-family: 'Baloo Bhai 2';
+    font-size: 20px;
+    line-height: 26px;
+    border: none;
+    background: white;
+    cursor: pointer;
+    margin-right: 30px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.user-courses-list-sorting__buttons:hover {
+    color: black;
+}
+
+.user-courses-list-table-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F5F5F7;
+    border-radius: 14px;
+    margin-bottom: 10px;
+}
+
+.user-courses-list-table-item__image {
+    box-sizing: border-box;
+    padding: 14px 21px;
+    margin: 8px 24px 8px 8px;
+    border-radius: 12px;
+    background: white;
+}
+
+.user-courses-list-table-item__name-author {
+    margin-right: 57px;
+}
+
+.user-courses-list-table-item__name-author > h2{
+    font-family: 'Baloo Bhai 2';
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.user-courses-list-table-item__name-author > h3{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.user-courses-list-table-item__time {
+    display: flex;
+    align-items: center;
+    margin-right: 38px;
+}
+
+.user-courses-list-table-item__time > span {
+    margin-left: 8px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.user-courses-list-table-item__rating {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.user-courses-list-table-item__rating > span {
+    margin-left: 8px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.user-courses-list-table-item__link {
+    text-decoration: none;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    background: black;
+    border-radius: 8px;
+    padding: 12px 24px;
+    color: white;
+    margin-right: 24px;
+}
+/*конец оформления блока с курсами*/

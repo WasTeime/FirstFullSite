@@ -1,0 +1,8 @@
+body {
+    padding: 24px 80px 24px 32px;
+}
+
+.body-content {
+    display: flex;
+    height: 90vh;
+}
