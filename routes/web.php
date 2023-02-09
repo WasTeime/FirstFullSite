@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomePageController;
+use App\Http\Controllers\CreateCourseController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,6 +19,9 @@ use App\Http\Controllers\HomePageController;
 });*/
 Route::name('pages.')->group(function () {
     Route::get('/', [HomePageController::class, 'index'])->name('home');
+
+    Route::get('/createCourse', [CreateCourseController::class, 'index'])->name('createCourse');
+    Route::match(['get', 'post'],'/createCourseSend', [CreateCourseController::class, 'createCourse'])->name('createCourseSend');
 
     Route::get('/courses', function () {
         return view('coursesPage');
